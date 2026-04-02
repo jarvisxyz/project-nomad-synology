@@ -36,8 +36,8 @@ jobs:
             tag: ghcr.io/${{ github.repository_owner }}/project-nomad-sidecar-updater:latest
 
           - name: project-nomad-disk-collector
-            context: upstream/install/disk-collector/
-            dockerfile: upstream/install/disk-collector/Dockerfile
+            context: upstream/install/sidecar-disk-collector/
+            dockerfile: upstream/install/sidecar-disk-collector/Dockerfile
             tag: ghcr.io/${{ github.repository_owner }}/project-nomad-disk-collector:latest
 
     steps:
