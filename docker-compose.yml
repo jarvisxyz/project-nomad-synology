@@ -2,7 +2,7 @@ name: project-nomad
 
 services:
   admin:
-    image: ghcr.io/eizus/project-nomad:latest
+    image: ghcr.io/jarvisxyz/project-nomad:latest
     # For x86-64 Synology, you can use the upstream image instead:
     # image: ghcr.io/crosstalk-solutions/project-nomad:latest
     pull_policy: always
@@ -85,7 +85,7 @@ services:
       - DOZZLE_ENABLE_SHELL=false
 
   updater:
-    image: ghcr.io/eizus/project-nomad-sidecar-updater:latest
+    image: ghcr.io/jarvisxyz/project-nomad-sidecar-updater:latest
     # For x86-64 Synology, you can use the upstream image instead:
     # image: ghcr.io/crosstalk-solutions/project-nomad-sidecar-updater:latest
     pull_policy: always
@@ -97,7 +97,7 @@ services:
       - nomad-update-shared:/shared
 
   disk-collector:
-    image: ghcr.io/eizus/project-nomad-disk-collector:latest
+    image: ghcr.io/jarvisxyz/project-nomad-disk-collector:latest
     # For x86-64 Synology, you can use the upstream image instead:
     # image: ghcr.io/crosstalk-solutions/project-nomad-disk-collector:latest
     pull_policy: always
